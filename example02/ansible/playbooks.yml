@@ -1,0 +1,12 @@
+#######
+- name: Configuration_Management-Node02
+  become: true
+  hosts: Node02-Ubuntu
+  roles:
+    - apache2
+
+- name: Configuration_Management-Node01
+  become: true
+  hosts: Node01-Centos
+  roles:
+    - httpd

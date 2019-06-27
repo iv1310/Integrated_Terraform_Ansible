@@ -1,0 +1,14 @@
+---
+# tasks file for apache2
+- command: apt-get update
+- name: Install Apache2
+  apt: "name=apache2 state=latest"
+ 
+- name: Copy index.html file
+  copy: src=files/index.html dest=/var/www/html
+  notify:
+    - restart apache2
+
+- name: Start and Enable apache2 service
+  service: name=apache2 state=restarted enabled=yes
+        

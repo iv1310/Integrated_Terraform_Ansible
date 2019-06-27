@@ -1,0 +1,12 @@
+# For example01 directory
+example01/terraform/terraform.tfstate*
+example01/terraform/ivan-intern.pem
+example01/terraform/tfplan
+example01/terraform/.terraform/
+
+# For example02 directory
+example02/terraform/terraform.tfstate*
+example02/terraform/tfplan
+example02/terraform/.terraform/
+example02/ansible/ivan-intern.pem
+example02/ansible/inventory
